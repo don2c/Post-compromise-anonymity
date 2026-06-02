@@ -1,0 +1,29 @@
+{
+  "artifact": "PCAA ring-recalculated reproducibility artifact",
+  "seed": 20260531,
+  "target_ring_size": 64,
+  "inputs": {
+    "prime_ring_ehealth_access_log.csv": "56053336b3957c95f58ba23f020ef3d1985bf328d8764739fd2b8bddd78fc309",
+    "prime_ring_ehealth_staff_graph_edges.csv": "e8b49ccd6e08bb4d3a32ae9862f680bf5f2ee53fcc9f86bae00edfaac1afe3a4"
+  },
+  "outputs": {
+    "dataset_summary.csv": "b52971560cab52674c6944529c59015575cdcf75bd0f705ea30bd38e394a0d81",
+    "workloads.csv": "dfaf9d7f776ea47ac2794c219a1f110afab402744851d4f0ae6a07cc6d5342f2",
+    "key_update.csv": "ea889b70c099b49b417c753bbadf6082674870c7a36d8b0d0d69108b0b5dcf8b",
+    "latency.csv": "c0ddccb57999d6c3eef3adb5a8571353193563a2074dc1ec6ce8872f7866c92a",
+    "sizes.csv": "0a9849f78b24dfc9a567188fc19d88e54e2705cb837dde61314769fd0751589e",
+    "recovery_support.csv": "69195bc17e7f143e824c39b1231a6f2f2b74f24edae878558a4ba3e4731298a2",
+    "recovery_latency.csv": "bda9999b38b495dd60c332cc8226a775b3c202aec26f71e296bab8f67b109ebc",
+    "unlinkability.csv": "580defefcdac81895e70be01b2e6ce80d982d28bbfe575ba4d6bb2bac587625f",
+    "residual_sources.csv": "974b92818ff0513ea0d42d6da6ddb1603cfd1905d9aff48f579244e9c52e5971",
+    "ablation.csv": "a5684d67c630889dff237c11a4e282db10b8be5f41d85d26e5df81006242127b",
+    "scalability.csv": "00411d489cbe3a060c3b339cb301d109746deab422a088f1017bb549d8201ef6"
+  },
+  "latex_tables": "results/tables.tex",
+  "section_tex": "results/experimental_results_section.tex",
+  "ring_model": "epoch-rotating balanced shared ring pools; graph-neighbor fill before random decoy fill",
+  "cost_model": {
+    "show_ms": "5.00 + 0.82*policy_size + 0.024*ring_size + 0.00018*rev_count_epoch",
+    "verify_ms": "2.75 + 0.47*policy_size + 0.015*ring_size + 0.00012*rev_count_epoch"
+  }
+}
