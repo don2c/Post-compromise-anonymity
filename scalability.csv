@@ -1,0 +1,20 @@
+factor,value,metric,result
+$|U|$,55,$C_{\mathsf{norm}}$,0.495
+$|U|$,110,$C_{\mathsf{norm}}$,0.565
+$|U|$,220,$C_{\mathsf{norm}}$,0.616
+$|R|$,8,PLA,0.069
+$|R|$,16,PLA,0.049
+$|R|$,32,PLA,0.034
+$|R|$,64,PLA,0.024
+$|\phi|$,3,Show ms,8.996
+$|\phi|$,4,Show ms,9.816
+$|\phi|$,5,Show ms,10.636
+$|\phi|$,6,Show ms,11.456
+$|\mathsf{rev}|$,0,Verify ms,5.591
+$|\mathsf{rev}|$,50,Verify ms,5.597
+$|\mathsf{rev}|$,250,Verify ms,5.621
+$|\mathsf{rev}|$,749,Verify ms,5.681
+$\Delta_e$,1h,daily update ms,10.8
+$\Delta_e$,6h,daily update ms,1.8
+$\Delta_e$,12h,daily update ms,0.9
+$\Delta_e$,24h,daily update ms,0.45

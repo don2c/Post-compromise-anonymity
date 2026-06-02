@@ -1,0 +1,23 @@
+\section{Experimental Results}
+\label{sec:experimental-results}
+
+\subsection{Experimental Setup}
+The experiment uses the public e-health access trace and staff graph. Rings are rebuilt with an epoch-rotating balanced construction. Each staff member is assigned to a shared ring pool of target size $|R|=32$ per epoch. The pool is refreshed at each epoch and filled with active decoys, with graph neighbors used before random fill. This prevents a ring identifier from acting as a staff-local ego signature.
+
+\subsection{Microbenchmark Results}
+Table~\ref{tab:key-update} reports epoch-key update cost. Table~\ref{tab:proof-verify} reports proof-generation and verification latency. Table~\ref{tab:size} reports transcript and public-parameter size.
+
+\subsection{Post-Compromise Recovery}
+Table~\ref{tab:recovery-baseline} compares recovery support across schemes. Table~\ref{tab:recovery} reports recovery latency under increasing exposure scope.
+
+\subsection{Unlinkability Under Current-Key Exposure}
+Table~\ref{tab:unlinkability-current-key} reports prior-epoch linking. PCAA keeps the same leakage-conditioned score before and after current-key exposure because erased prior keys are unavailable.
+
+\subsection{Residual Linkability Sources}
+Table~\ref{tab:residual-sources} separates leakage from epoch tags, ring visibility, timing metadata, and revocation visibility. The recalculated ring construction raises conditional uncertainty by replacing staff-local rings with shared epoch rings.
+
+\subsection{Ablation Study}
+Table~\ref{tab:ablation} removes one component at a time. Removing epoch evolution or prior-key erasure makes prior transcripts linkable after exposure. Removing ring refresh restores staff-local ring leakage.
+
+\subsection{Scalability}
+Table~\ref{tab:scalability} varies $|U|$, $|R|$, $|\phi|$, $|\mathsf{rev}|$, and $\Delta_e$.

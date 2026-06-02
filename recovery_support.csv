@@ -1,0 +1,6 @@
+scheme,recovery,stale rejection,verifier unchanged
+PCAA,yes,yes,yes
+Static AC,no,no,yes
+Hecate-style AC,no,no,yes
+Epoch-only AC,partial,no,yes
+Random selection,no,no,n/a

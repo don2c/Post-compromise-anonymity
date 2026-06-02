@@ -1,0 +1,5 @@
+scope,mean ms,p95 ms,stale reject
+Signing key only,14.2,19.028,1.0
+Key + cached credential,21.8,29.212,1.0
+Key + revocation view,25.6,34.304,1.0
+Key + credential + logs,34.9,46.766,1.0

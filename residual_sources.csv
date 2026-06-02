@@ -1,0 +1,6 @@
+source,metric,value,$C_{\mathsf{norm}}$
+Epoch tags,$H(U)-H(U|E)$,0.039,0.995
+Ring set,$H(U)-H(U|R)$,2.027,0.739
+Timing metadata,$\Delta_T$,0.926,0.616
+Revocation visibility,$\Delta_V$,0.033,0.616
+Combined leakage,"$\epsilon_{\mathcal{L}}=PLA(E,R,O,T,V)$",0.034,0.616
